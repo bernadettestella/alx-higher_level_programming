@@ -1,2 +1,7 @@
 #!/usr/bin/node
-exports.list = [1, 2, 3, 4, 5];
+exports.converter = function (base) {
+  function conv (number) {
+    return number.toString(base);
+  }
+  return conv;
+};
